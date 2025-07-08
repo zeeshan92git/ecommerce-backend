@@ -108,9 +108,9 @@ const updateuserProfile = async (req, res) => {
 
 
         if (imgFile) {
-            console.log("Cloud name:", process.env.CLOUDINARY_NAME);
-            console.log("API Key:", process.env.CLOUDINARY_APIKEY);
-            console.log("API Secret:", process.env.CLOUDINARY_SECRETKEY);
+            // console.log("Cloud name:", process.env.CLOUDINARY_NAME);
+            // console.log("API Key:", process.env.CLOUDINARY_APIKEY);
+            // console.log("API Secret:", process.env.CLOUDINARY_SECRETKEY);
 
             const imgUpload = await cloudinary.uploader.upload(imgFile.path, { resource_type: "image" });
             const imgURL = imgUpload.secure_url;

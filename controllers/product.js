@@ -49,7 +49,7 @@ const getProducts = async (req, res) => {
     if (products.length === 0) {
       return res.json({ success: false, message: "Products not found", data: NULL })
     }
-    console.log("Products obtained", products);
+    //console.log("Products obtained", products);
     return res.status(200).json({ success: true, message: "Products obtained Successfullly", data: products });
   } catch (error) {
     return res.status(500).json({ success: false, message: "Internal Server Error", error: error.message });
