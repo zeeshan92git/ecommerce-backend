@@ -9,8 +9,7 @@ import validator from 'validator';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 import cloudinary from "../config/cloudinary.js";
-import Stripe from 'stripe';
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
 
 //user registration
 const registerUser = async (req, res) => {

@@ -29,6 +29,7 @@ app.use("/api/user", userRouter);
 app.use("/api/cart",cartRouter);
 app.use("/api/inquiry",router);
 app.use("/api/order",Orderrouter);
+
 //Example Route
 app.get('/',(req,res)=>{
     res.send("API working greatly");
