@@ -18,7 +18,7 @@ app.use(express.json());
 
 // CORS POLICY
 app.use(cors({
-  origin: "http://localhost:5173",   
+  origin: process.env.FRONTEND_URI || "https://brand-azure.vercel.app",   
   credentials: true,                
 }));
 
